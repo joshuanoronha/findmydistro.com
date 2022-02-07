@@ -28,7 +28,7 @@ export default {
         linear-gradient(315deg, #002366 25%, transparent 25%),
         linear-gradient(45deg, #002366 25%, transparent 25%);
         background-size: 100px 100px;
-        background-color: #0047AB;`,
+        background-color: rgb(0, 26, 102)`,
       ],
     };
   },

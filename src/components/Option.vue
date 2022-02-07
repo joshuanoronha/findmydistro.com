@@ -1,5 +1,7 @@
 <template>
-  <div class="option">{{ name }}</div>
+  <div class="option">
+    <slot />
+  </div>
 </template>
 
 <script>
@@ -26,6 +28,7 @@ export default {
   text-shadow: 0 0 4px #fff;
   box-shadow: 0px 0px 6px 1px #fff;
   font-weight: 700;
-  outline: 0px
+  outline: 0px;
+  cursor: pointer;
 }
 </style>

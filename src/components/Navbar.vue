@@ -19,5 +19,9 @@ export default {};
   letter-spacing: -1px;
   width: 120px;
   margin: auto;
+  cursor: pointer;
+}
+.title:hover {
+  text-shadow: 0 0 3px #fff;
 }
 </style>
