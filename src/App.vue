@@ -21,7 +21,14 @@ export default {
         "background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);",
         "background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);",
         "background: linear-gradient(90deg, #d53369 0%, #daae51 100%);",
-        "background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);"
+        "background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);",
+        `background:
+        linear-gradient(135deg, #002366 25%, transparent 25%) -50px 0,
+        linear-gradient(225deg, #002366 25%, transparent 25%) -50px 0,
+        linear-gradient(315deg, #002366 25%, transparent 25%),
+        linear-gradient(45deg, #002366 25%, transparent 25%);
+        background-size: 100px 100px;
+        background-color: #0047AB;`,
       ],
     };
   },
