@@ -19,6 +19,22 @@
         "manjaro": {
             "name": "Manjaro",
             "base": "Arch"
+        },
+        "ubuntu": {
+            "name": "Ubuntu",
+            "base": "Debian"
+        },
+        "pop-os": {
+            "name": "Pop OS",
+            "base": "Ubuntu"
+        },
+        "deepin": {
+            "name": "Deepin",
+            "base": "Ubuntu"
+        },
+        "elementary": {
+            "name": "Elementary",
+            "base": "Ubuntu"
         }
     },
     "questions": [

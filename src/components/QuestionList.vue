@@ -27,7 +27,7 @@
 <script>
 import Question from "./Question.vue";
 import Option from "./Option.vue";
-import { questions } from "../data/data.json";
+import { questions, distros } from "../data/data.json";
 
 export default {
   components: {
@@ -39,6 +39,7 @@ export default {
       questions,
       current: 0,
       distro: "",
+      distros: distros,
     };
   },
   methods: {
@@ -49,10 +50,29 @@ export default {
     addScore(preferences) {
       this.current += 1;
       if (this.current === questions.length) {
-        this.distro = "Ubuntu";
+        let maxScore = {
+          score: 0,
+        };
+        Object.keys(distros).map((distro) => {
+          if (distros[distro].score && distros[distro].score > maxScore.score) {
+            maxScore = distro;
+          }
+        });
+        this.distro = maxScore;
       }
       console.log(preferences);
-      this.$emit("update", preferences);
+      preferences.map((item) => {
+        const finalisedDistro = Object.keys(distros).find((distro) => {
+          console.log(item.id, distro);
+          return item.id == distro;
+        });
+        console.log(finalisedDistro)
+        if (finalisedDistro.score) {
+          this.distros[finalisedDistro].score += Number(item.score);
+        } else {
+          this.distros[finalisedDistro].score = Number(item.score);
+        }
+      });
     },
   },
 };
