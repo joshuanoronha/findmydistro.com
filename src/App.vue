@@ -1,33 +1,33 @@
 <template>
-  <Question question="Welcome to Your Vue.js App" :answers="answers" />
+  <Navbar/>
+  <QuestionList />
 </template>
 
 <script>
-import Question from "./components/Question.vue";
+import QuestionList from "./components/QuestionList.vue";
+import Navbar from "./components/Navbar.vue";
 
 export default {
   name: "App",
   data() {
-    return {
-      answers: [
-        { index: 1, value: "Ubuntu" },
-        { index: 2, value: "Manjaro" },
-      ],
-    };
+    return {};
   },
   components: {
-    Question,
+    QuestionList,
+    Navbar,
   },
 };
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@500;700&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'IBM Plex Sans Thai Looped',Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-top: 60px;
-  max-width: 400px;
+  max-width: 500px;
   margin: auto;
   color: white;
 }
