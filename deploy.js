@@ -6,6 +6,7 @@ const fs = require("fs");
     await execa("git", ["checkout", "--orphan", "gh-pages"]);
     console.log("Building started...");
     await execa("npm", ["run", "build"]);
+    await execa("touch", [".nojekyll"]);
     const folderName = fs.existsSync("dist") ? "dist" : "build";
     await execa("git", ["--work-tree", folderName, "add", "--all"]);
     await execa("git", ["--work-tree", folderName, "commit", "-m", "gh-pages"]);
