@@ -1,0 +1,89 @@
+{
+    "distros": {
+        "kubuntu": {
+            "name": "Kubuntu",
+            "base": "Ubuntu"
+        },
+        "kde-neon": {
+            "name": "KDE Neon",
+            "base": "KDE"
+        },
+        "mx-linux": {
+            "name": "MX Linux",
+            "base": "XFCE"
+        },
+        "linux-mint": {
+            "name": "Linux Mint",
+            "base": "Linux Mint"
+        },
+        "manjaro": {
+            "name": "Manjaro",
+            "base": "Arch"
+        }
+    },
+    "questions": [
+        {
+            "key":"1",
+            "question": {
+                "name": "Which of these options are you more comfortable with?"
+            },
+            "options": [
+                {
+                    "name": "Windows",
+                    "preferences": [
+                        {
+                            "id": "kubuntu",
+                            "score": "8"
+                        },
+                        {
+                            "id": "kde-neon",
+                            "score": "8"
+                        },
+                        {
+                            "id": "mx-linux",
+                            "score": "9"
+                        },
+                        {
+                            "id": "linux-mint",
+                            "score": "9"
+                        },
+                        {
+                            "id": "manjaro",
+                            "score": "7"
+                        }
+                    ]
+                },
+                {
+                    "name": "Mac OS",
+                    "preferences": [
+                        {
+                            "id": "pop-os",
+                            "score": "7"
+                        },
+                        {
+                            "id": "deepin",
+                            "score": "9"
+                        }
+                    ]
+                },
+                {
+                    "name": "Linux",
+                    "preferences": [
+                        {
+                            "id": "ubuntu",
+                            "score": "9"
+                        },
+                        {
+                            "id": "ubuntu",
+                            "score": "9"
+                        },
+                        {
+                            "id": "ubuntu",
+                            "score": "9"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

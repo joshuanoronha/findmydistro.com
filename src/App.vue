@@ -1,17 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Question question="Welcome to Your Vue.js App" :answers="answers" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Question from "./components/Question.vue";
 
 export default {
-  name: 'App',
+  name: "App",
+  data() {
+    return {
+      answers: [
+        { index: 1, value: "Ubuntu" },
+        { index: 2, value: "Manjaro" },
+      ],
+    };
+  },
   components: {
-    HelloWorld
-  }
-}
+    Question,
+  },
+};
 </script>
 
 <style>
@@ -19,8 +26,9 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
+  max-width: 400px;
+  margin: auto;
+  color: white;
 }
 </style>
