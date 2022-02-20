@@ -70,8 +70,8 @@ export default {
         const finalisedDistro = Object.keys(distros).find((distro) => {
           return item.id == distro;
         });
-        console.log(finalisedDistro)
-        if (finalisedDistro.score) {
+        
+        if (this.distros[finalisedDistro].score) {
           this.distros[finalisedDistro].score += Number(item.score);
           console.log(this.distros[finalisedDistro])
         } else {
