@@ -61,25 +61,13 @@
                         },
                         {
                             "id": "elementary",
-                            "score": 10
+                            "score": 9
                         }
                     ]
                 },
                 {
                     "name": "Linux Average",
                     "preferences": [
-                        {
-                            "id": "ubuntu",
-                            "score": 10
-                        },
-                        {
-                            "id": "kde-neon",
-                            "score": 10
-                        },
-                        {
-                            "id": "linux-mint",
-                            "score": 10
-                        },
                         {
                             "id": "pop-os",
                             "score": 10
@@ -101,34 +89,6 @@
                 {
                     "name": "Linux Pro",
                     "preferences": [
-                        {
-                            "id": "ubuntu",
-                            "score": 10
-                        },
-                        {
-                            "id": "kde-neon",
-                            "score": 10
-                        },
-                        {
-                            "id": "linux-mint",
-                            "score": 10
-                        },
-                        {
-                            "id": "pop-os",
-                            "score": 10
-                        },
-                        {
-                            "id": "elementary",
-                            "score": 10
-                        },
-                        {
-                            "id": "mx-linux",
-                            "score": 10
-                        },
-                        {
-                            "id": "deepin",
-                            "score": 10
-                        },
                         {
                             "id": "manjaro",
                             "score": 10
@@ -191,14 +151,6 @@
                         {
                             "id": "mx-linux",
                             "score": 10
-                        },
-                        {
-                            "id": "linux-mint",
-                            "score": 9
-                        },
-                        {
-                            "id": "manjaro",
-                            "score": 7
                         }
                     ]
                 },
@@ -270,11 +222,11 @@
                         },
                         {
                             "id": "elementary",
-                            "score": 10
+                            "score": 9
                         },
                         {
                             "id": "linux-mint",
-                            "score": 10
+                            "score": 9
                         },
                         {
                             "id": "ubuntu",
