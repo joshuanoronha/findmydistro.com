@@ -1,11 +1,13 @@
 <template>
   <Navbar />
   <QuestionList />
+  <Footer />
 </template>
 
 <script>
 import QuestionList from "./components/QuestionList.vue";
 import Navbar from "./components/Navbar.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
@@ -40,6 +42,7 @@ export default {
   components: {
     QuestionList,
     Navbar,
+    Footer,
   },
 };
 </script>
