@@ -1,9 +1,5 @@
 {
     "distros": {
-        "kubuntu": {
-            "name": "Kubuntu",
-            "base": "Ubuntu"
-        },
         "kde-neon": {
             "name": "KDE Neon",
             "base": "KDE"
@@ -41,61 +37,101 @@
         {
             "key": "0",
             "question": {
-                "name": "Which of these options are you more comfortable with?"
+                "name": "Which of the following are you?"
             },
             "options": [
                 {
-                    "name": "Windows",
+                    "name": "Linux Beginner",
                     "preferences": [
                         {
-                            "id": "kubuntu",
-                            "score": "8"
+                            "id": "ubuntu",
+                            "score": 10
                         },
                         {
                             "id": "kde-neon",
-                            "score": "8"
-                        },
-                        {
-                            "id": "mx-linux",
-                            "score": "9"
+                            "score": 10
                         },
                         {
                             "id": "linux-mint",
-                            "score": "9"
+                            "score": 10
                         },
                         {
-                            "id": "manjaro",
-                            "score": "7"
+                            "id": "pop-os",
+                            "score": 10
+                        },
+                        {
+                            "id": "elementary",
+                            "score": 10
                         }
                     ]
                 },
                 {
-                    "name": "Mac OS",
+                    "name": "Linux Average",
                     "preferences": [
                         {
+                            "id": "ubuntu",
+                            "score": 10
+                        },
+                        {
+                            "id": "kde-neon",
+                            "score": 10
+                        },
+                        {
+                            "id": "linux-mint",
+                            "score": 10
+                        },
+                        {
                             "id": "pop-os",
-                            "score": "7"
+                            "score": 10
+                        },
+                        {
+                            "id": "elementary",
+                            "score": 10
+                        },
+                        {
+                            "id": "mx-linux",
+                            "score": 10
                         },
                         {
                             "id": "deepin",
-                            "score": "9"
+                            "score": 10
                         }
                     ]
                 },
                 {
-                    "name": "Linux",
+                    "name": "Linux Pro",
                     "preferences": [
                         {
                             "id": "ubuntu",
-                            "score": "9"
+                            "score": 10
                         },
                         {
-                            "id": "ubuntu",
-                            "score": "9"
+                            "id": "kde-neon",
+                            "score": 10
                         },
                         {
-                            "id": "ubuntu",
-                            "score": "9"
+                            "id": "linux-mint",
+                            "score": 10
+                        },
+                        {
+                            "id": "pop-os",
+                            "score": 10
+                        },
+                        {
+                            "id": "elementary",
+                            "score": 10
+                        },
+                        {
+                            "id": "mx-linux",
+                            "score": 10
+                        },
+                        {
+                            "id": "deepin",
+                            "score": 10
+                        },
+                        {
+                            "id": "manjaro",
+                            "score": 10
                         }
                     ]
                 }
@@ -104,31 +140,65 @@
         {
             "key": "1",
             "question": {
-                "name": "?"
+                "name": "Do you prefer stability or latest features?"
+            },
+            "options": [
+                {
+                    "name": "Stability",
+                    "preferences": [
+                        {
+                            "id": "ubuntu",
+                            "score": 10
+                        },
+                        {
+                            "id": "linux-mint",
+                            "score": 10
+                        },
+                        {
+                            "id": "pop-os",
+                            "score": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Latest features",
+                    "preferences": [
+                        {
+                            "id": "manjaro",
+                            "score": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Skip",
+                    "preferences": []
+                }
+            ]
+        },
+        {
+            "key": "2",
+            "question": {
+                "name": "Which of these options are you more comfortable with?"
             },
             "options": [
                 {
                     "name": "Windows",
                     "preferences": [
                         {
-                            "id": "kubuntu",
-                            "score": "8"
-                        },
-                        {
                             "id": "kde-neon",
-                            "score": "8"
+                            "score": 8
                         },
                         {
                             "id": "mx-linux",
-                            "score": "9"
+                            "score": 10
                         },
                         {
                             "id": "linux-mint",
-                            "score": "9"
+                            "score": 9
                         },
                         {
                             "id": "manjaro",
-                            "score": "7"
+                            "score": 7
                         }
                     ]
                 },
@@ -137,11 +207,11 @@
                     "preferences": [
                         {
                             "id": "pop-os",
-                            "score": "7"
+                            "score": 7
                         },
                         {
                             "id": "deepin",
-                            "score": "9"
+                            "score": 10
                         }
                     ]
                 },
@@ -150,17 +220,71 @@
                     "preferences": [
                         {
                             "id": "ubuntu",
-                            "score": "9"
+                            "score": 10
                         },
                         {
-                            "id": "ubuntu",
-                            "score": "9"
-                        },
-                        {
-                            "id": "ubuntu",
-                            "score": "9"
+                            "id": "linux-mint",
+                            "score": 10
                         }
                     ]
+                },
+                {
+                    "name": "I am open to experiment",
+                    "preferences": []
+                }
+            ]
+        },
+        {
+            "key": "2",
+            "question": {
+                "name": "Do you prefer working with the command line?"
+            },
+            "options": [
+                {
+                    "name": "Yes",
+                    "preferences": [
+                        {
+                            "id": "manjaro",
+                            "score": 10
+                        },
+                        {
+                            "id": "kde-neon",
+                            "score": 8
+                        },
+                        {
+                            "id": "ubuntu",
+                            "score": 8
+                        },
+                        {
+                            "id": "linux-mint",
+                            "score": 8
+                        }
+                    ]
+                },
+                {
+                    "name": "No",
+                    "preferences": [
+                        {
+                            "id": "pop-os",
+                            "score": 10
+                        },
+                        {
+                            "id": "elementary",
+                            "score": 10
+                        },
+                        {
+                            "id": "linux-mint",
+                            "score": 10
+                        },
+                        {
+                            "id": "ubuntu",
+                            "score": 8
+                        }
+                    ]
+                },
+                {
+                    "name": "Maybe",
+                    "preferences": []
                 }
             ]
         }

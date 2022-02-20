@@ -54,21 +54,26 @@ export default {
           score: 0,
         };
         Object.keys(distros).map((distro) => {
-          if (distros[distro].score && distros[distro].score > maxScore.score) {
-            maxScore = distro;
+          console.log(maxScore.score, distros[distro]);
+          if (
+            distros[distro].score &&
+            Number(distros[distro].score) >= Number(maxScore.score)
+          ) {
+            maxScore = distros[distro];
           }
         });
-        this.distro = maxScore;
+        this.distro = maxScore.name;
       }
-      console.log(preferences);
+
+
       preferences.map((item) => {
         const finalisedDistro = Object.keys(distros).find((distro) => {
-          console.log(item.id, distro);
           return item.id == distro;
         });
         console.log(finalisedDistro)
         if (finalisedDistro.score) {
           this.distros[finalisedDistro].score += Number(item.score);
+          console.log(this.distros[finalisedDistro])
         } else {
           this.distros[finalisedDistro].score = Number(item.score);
         }
